@@ -1,11 +1,10 @@
 // Error 1:
 let message = 'Welcome to the debugging exercise!';
-console.log(mesage); 
+console.log(message); 
 
 // Error 2: 
-let button = document.querySelector('.actionButton'); 
+let button = document.querySelector('#actionButton'); 
 button.addEventListener('click', eventHandler); 
-
 // Error 3: 
 function eventHandler() {
   console.log('Button clicked');
@@ -21,10 +20,10 @@ function displayOutput() {
 // Error 6: Misusing variable scope
 function updateMessage() {
   let localMessage = 'Updated message';
-}
+
 updateMessage();
 console.log(localMessage); 
-
+}
 // Error 7:
 document.getElementById('testButton').addEventListener('click', testFunction());
 
@@ -38,34 +37,36 @@ let number2 = 5;
 console.log('Sum is: ' + (number1 - number2));
 
 // Error 9: 
-let nullVar = null;
+let nullVar = 100;
 console.log(nullVar.length);
 
 // Error 10:
 let caseSensitiveVar = 'Case matters';
-console.log(CaseSensitiveVar);
+console.log(caseSensitiveVar);
 
 // Error 11:
-let importantData =
+let importantData = 1
   "This string must be logged to the console. It's important!";
 console.log('importantData');
 
 // Error 12: 
-tryToCallFunction();
+
 
 // Error 13:
-let user = { namee: 'Alice' };
+let user = { name: 'Alice' };
 console.log(user.name)
 
 // Error 14: 
 let someNumber = 123;
-console.log(someNumber.toUpperCase()); 
+console.log(someNumber); 
 
 // Error 15: 
-let greeting = Hello, world!;
+let greeting = "Hello, world!";
 
 // Error 16: 
-for (let i = 0; i < 5; i++); {
+for
+ (let i = 1; 
+  i < 5; i++) {
     console.log(i);
 }
 
@@ -85,11 +86,11 @@ numbers.push(1);
 console.log(numbers);
 
 // Error 19:
+let x = 5;
 console.log(x);
-x = 5;
-
 // Error 20:
 let myString = 'Hello';
 myString.property = 'World';
 console.log(myString.property); 
 
+}
